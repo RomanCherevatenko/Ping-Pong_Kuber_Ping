@@ -1,0 +1,35 @@
+2022-04-08 13:52:05.287  INFO 24180 --- [main] com.example.ping.PingApplication         : Starting PingApplication using Java 11.0.13 on EPUAKYIW0D81 with PID 24180 (C:\Users\Roman_Cherevatenko\Ping\ping\target\classes started by Roman_Cherevatenko in C:\Users\Roman_Cherevatenko\Ping)
+2022-04-08 13:52:05.294  INFO 24180 --- [main] com.example.ping.PingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-04-08 13:52:05.953  INFO 24180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-04-08 13:52:05.961  INFO 24180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-08 13:52:05.961  INFO 24180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-08 13:52:06.082  INFO 24180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-08 13:52:06.083  INFO 24180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 747 ms
+2022-04-08 13:52:06.343  WARN 24180 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8089 is already in use
+2022-04-08 13:52:06.346  INFO 24180 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-08 13:52:06.357  INFO 24180 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-08 13:52:06.370 ERROR 24180 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8089 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8089 or configure this application to listen on another port.
+
+2022-04-08 15:11:05.941  INFO 12044 --- [main] com.example.ping.PingApplication         : Starting PingApplication using Java 11.0.13 on EPUAKYIW0D81 with PID 12044 (C:\Users\Roman_Cherevatenko\Ping\ping\target\classes started by Roman_Cherevatenko in C:\Users\Roman_Cherevatenko\Ping)
+2022-04-08 15:11:05.946  INFO 12044 --- [main] com.example.ping.PingApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-04-08 15:11:07.188  INFO 12044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-08 15:11:07.200  INFO 12044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-08 15:11:07.200  INFO 12044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-08 15:11:07.331  INFO 12044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-08 15:11:07.331  INFO 12044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1323 ms
+2022-04-08 15:11:07.705  INFO 12044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-08 15:11:07.718  INFO 12044 --- [main] com.example.ping.PingApplication         : Started PingApplication in 2.505 seconds (JVM running for 3.983)

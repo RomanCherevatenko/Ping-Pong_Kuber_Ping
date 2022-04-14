@@ -1,0 +1,41 @@
+{{/*apiVersion : apps/v1*/}}
+{{/*kind: Deployment*/}}
+{{/*metadata:*/}}
+{{/*  name: ping*/}}
+{{/*  labels:*/}}
+{{/*    app : ping*/}}
+{{/*  namespace: my-ns*/}}
+{{/*spec:*/}}
+{{/*  replicas: 1*/}}
+{{/*  selector:*/}}
+{{/*    matchLabels:*/}}
+{{/*      project: ping*/}}
+{{/*  template:*/}}
+{{/*    metadata:*/}}
+{{/*      labels:*/}}
+{{/*        project: ping   # Service will look for those PODS Labels!!!*/}}
+{{/*    spec:*/}}
+{{/*      containers:*/}}
+{{/*        - name : ping*/}}
+{{/*          imagePullPolicy: Always*/}}
+{{/*          image: roman1844/ping:1.0.0*/}}
+{{/*          command: ["sh", "-c"]*/}}
+{{/*          args:*/}}
+{{/*          - while true; do*/}}
+{{/*              echo -en '\n';*/}}
+{{/*              printenv PONG_SERVICE_HOST;*/}}
+{{/*              sleep 10;*/}}
+{{/*            done;*/}}
+{{/*          ports:*/}}
+{{/*            - containerPort: 8089*/}}
+{{/*          env:*/}}
+{{/*            - name: PONG_SERVICE_HOST*/}}
+{{/*              value:*/}}
+
+
+{{/*                  env:*/}}
+{{/*                    - name: PONG_SERVICE_HOST*/}}
+{{/*                      valueFrom:*/}}
+{{/*                        fieldRef:*/}}
+{{/*                          fieldPath: status.podIP*/}}
+
