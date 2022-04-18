@@ -16,6 +16,7 @@ public class PingApplication {
 
     public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(PingApplication.class, args);
+        String serverUrl = "http://pong-service:8080/ping-pong";
 
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders httpHeaders = new HttpHeaders();
@@ -30,7 +31,7 @@ public class PingApplication {
 
         while (true) {
             String personResultAsJsonStr =
-                    restTemplate.postForObject("http://pong-service:8080/ping-pong", request, String.class);
+                    restTemplate.postForObject(serverUrl, request, String.class);
             System.out.println("Ping - ping - ping...");
             Thread.sleep(1000);
 
