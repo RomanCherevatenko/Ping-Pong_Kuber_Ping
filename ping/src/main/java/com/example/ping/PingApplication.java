@@ -33,7 +33,7 @@ public class PingApplication {
             String personResultAsJsonStr =
                     restTemplate.postForObject(serverUrl, request, String.class);
             System.out.println("Ping - ping - ping...");
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         }
     }
 }
