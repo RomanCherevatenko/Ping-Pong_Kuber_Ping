@@ -21,8 +21,8 @@ public class PingApplication {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-
         JSONObject jsonObject = new JSONObject();
+
         jsonObject.put("text", "Zdarova, eto Ping..." +
                 new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime()));
 
@@ -34,7 +34,6 @@ public class PingApplication {
                     restTemplate.postForObject(serverUrl, request, String.class);
             System.out.println("Ping - ping - ping...");
             Thread.sleep(1000);
-
         }
     }
 }
